@@ -5,7 +5,7 @@ import kotlinx.coroutines.withContext
 
 object MindiRepo {
 
-    suspend fun fetchApiMin(): Result<List<Valor>> = withContext(Dispatchers.IO) {
+    suspend fun fetchApiMin(): Result<ListaMindi> = withContext(Dispatchers.IO) {
         try {
             Result.success(MinApiClient.service.getUtm())
         } catch (e: Exception) {
