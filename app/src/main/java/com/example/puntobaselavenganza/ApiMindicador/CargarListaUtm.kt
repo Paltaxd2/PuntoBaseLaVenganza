@@ -24,10 +24,12 @@ object CargarListaUtm {
                     Toast.LENGTH_SHORT
                 ).show()
 
+                val utmDatos = utmList.serie
+                val utmSerie = utmDatos[0]
+                val numeroUtm = utmSerie.valor
 
+                primerValor = numeroUtm
 
-
-                // primerValor = listaValores[0].toString().toIntOrNull()?: 0
 
 
 
